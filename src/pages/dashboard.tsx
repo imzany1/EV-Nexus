@@ -6,6 +6,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import ResourceCard from "@/components/Resources/ResourceCard";
+import Navbar from "@/components/Layout/Navbar";
+import Footer from "@/components/Layout/Footer";
 
 const Dashboard = () => {
   const [userName, setUserName] = useState<string | null>(null);
@@ -95,6 +97,7 @@ const Dashboard = () => {
 
   return (
     <div className="space-y-6">
+      <Navbar/>
       <div className="flex flex-col md:flex-row justify-between gap-4">
         <h1 className="text-3xl font-bold">Welcome, {userName}</h1>
         <div className="text-sm text-muted-foreground">
@@ -201,7 +204,8 @@ const Dashboard = () => {
           </div>
         </TabsContent>
       </Tabs>
-    </div>
+      <Footer />
+      </div>
   );
 };
 

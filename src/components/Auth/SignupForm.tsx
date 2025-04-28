@@ -121,7 +121,7 @@ const SignupForm = () => {
       <CardFooter>
         <div className="text-sm text-center w-full">
           Already have an account?{" "}
-          <a href="#" className="text-primary hover:underline">
+          <a href="/login" className="text-primary hover:underline">
             Sign in
           </a>
         </div>
